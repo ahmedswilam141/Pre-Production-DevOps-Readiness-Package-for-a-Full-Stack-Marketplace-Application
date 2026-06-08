@@ -1,0 +1,44 @@
+# Root-level .dockerignore
+# Used when Docker build context is the project root (e.g. frontend build in dev compose)
+
+# Version control
+.git
+.gitignore
+
+# CI/CD
+.github
+
+# Documentation and project assets (not needed in image)
+docs/
+logos/
+"Mock UI"/
+"Project Architecture and API Doc"/
+"Project Scope"/
+*.md
+*.pdf
+*.pptx
+
+# Environment files — never copy real .env into images
+.env
+.env.*
+!.env.example
+backend/.env
+frontend/.env
+
+# Backups — never copy database dumps into images
+backups/
+*.sql
+
+# Node modules — each service installs its own
+node_modules/
+*/node_modules/
+
+# Build outputs already handled by multi-stage build
+dist/
+*/dist/
+
+# OS/editor artifacts
+.DS_Store
+.vscode
+*.suo
+*.sw?
