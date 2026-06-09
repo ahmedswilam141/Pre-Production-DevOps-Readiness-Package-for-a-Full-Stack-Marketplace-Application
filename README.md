@@ -44,7 +44,7 @@ Browser → Nginx (port 80/443) → Frontend (React/Vite/Nginx)
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone (https://github.com/ahmedswilam141/Pre-Production-DevOps-Readiness-Package-for-a-Full-Stack-Marketplace-Application.git)
 cd TradeSpace
 ```
 
